@@ -1,4 +1,6 @@
-# React coding problems focusing on event handling and state management
+# React coding problems
+
+React coding problems focusing on event handling and state management, ranging in difficulty from beginner to intermediate. Each problem includes a brief description, key concepts to focus on, and expected output.
 
 ---
 
@@ -110,3 +112,68 @@ Display error messages below each field if validation fails when the "Submit" bu
 **Concepts:** Lifting state up, passing a function as a prop from parent to child, `onClick` event in the parent.
 
 **Expected Output:** A `ParentComponent` displaying a "Reset Child Counter" button and the `ChildCounter` component. The button in the parent resets the child's count.
+
+---
+
+Here are 5 more React coding problems, incorporating **style manipulation** along with event handling and state management.
+
+---
+
+### React Coding Problems: Event Handling, State Management & Style Manipulation
+
+**Difficulty Scale:**
+* (B) - Beginner
+* (I) - Intermediate
+* (A) - Advanced
+
+---
+
+**Problem 11: Dynamic Box Resizer (I)**
+
+**Description:** Create a component `BoxResizer` that displays a `div` element (a box). Below the box, include two buttons: "Increase Size" and "Decrease Size". Clicking these buttons should increase or decrease the width and height of the box by a fixed amount (e.g., 20px). Ensure the box doesn't shrink to less than 20px by 20px.
+
+**Concepts:** `useState` for box dimensions (width, height), `onClick` event, **inline styles** or **dynamic CSS classes** (`style` prop with an object), conditional logic for minimum size.
+
+**Expected Output:** A square box, "Increase Size" button, "Decrease Size" button. Clicking buttons changes the box's dimensions.
+
+---
+
+**Problem 12: Color Picker (I)**
+
+**Description:** Build a `ColorPicker` component. It should display a `div` element and a set of color buttons (e.g., "Red", "Green", "Blue", "Yellow"). When a color button is clicked, the background color of the `div` element should change to that color.
+
+**Concepts:** `useState` for the current color, `onClick` event, **inline styles** (`backgroundColor` property), mapping over an array of colors to render buttons.
+
+**Expected Output:** A colored box and multiple color buttons. Clicking a button changes the box's background color.
+
+---
+
+**Problem 13: Progress Bar (I)**
+
+**Description:** Implement a `ProgressBar` component. It should have a visual progress bar (a `div` inside another `div` to represent the filled portion) and an input field to enter a percentage value (0-100). As the user types a valid percentage in the input, the width of the filled portion of the progress bar should update accordingly.
+
+**Concepts:** `useState` for the percentage value, `onChange` event, input validation, **inline styles** to control `width` (e.g., `${percentage}%`).
+
+**Expected Output:** An input field, and a progress bar that visually fills up based on the entered percentage.
+
+---
+
+**Problem 14: Accordion with Active Style (I)**
+
+**Description:** Enhance Problem 9 (Accordion/Collapsible Panel). When a panel is open, its header should have a distinct background color or font weight to visually indicate it's the active panel.
+
+**Concepts:** `useState` to track the active panel, `onClick` event, **conditional styling** using **inline styles** or by conditionally adding/removing **CSS classes** based on the active panel state.
+
+**Expected Output:** A series of collapsible panels. Clicking a panel header expands it, collapses others, and the active panel's header changes style.
+
+---
+
+**Problem 15: Draggable Square (A)**
+
+**Description:** Create a `DraggableSquare` component. It should render a square `div` element. The user should be able to click and drag this square around the screen.
+
+**Concepts:** `useState` for `top` and `left` CSS properties, `onMouseDown`, `onMouseMove`, and `onMouseUp` events, calculating mouse movement to update position, preventing default browser drag behavior, **inline styles** for positioning (`position: 'absolute'`, `top`, `left`).
+
+**Expected Output:** A square that can be clicked and dragged freely around the browser window.
+
+---

@@ -46,12 +46,11 @@ const AccordionWithActiveStyle = () => {
                                 {item.header}
                             </p>
                             <p style={{
-                                display: openPanel === index ? 'block' : 'none',
-                                height: openPanel === index ? '220px' :'0px',
+                                overflow: 'hidden',
+                                height: openPanel === index ? '220px' : '0px',
                                 background: 'lightblue',
-                                padding: '5px',
-                                transitionProperty: 'height',
-                                transitionDuration : '5s'
+                                padding: openPanel === index ? '5px' : '0px',
+                                transition: 'height 2s ease, padding 2s ease'
                             }}>
                                 {item.content}
                             </p>
